@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MY Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+  <body>
+    <form style="text-align: center">
+      <input type="text" readonly size="18" id="calculator" />
+
+      <div class="keys">
+        <p>
+          <input type="button" class="mycol2" value="C" onclick='c("")' />
+          <input type="button" class="btn1" value="(" onclick='v("(")' />
+          <input type="button" class="btn1" value=")" onclick='v(")")' />
+          <input type="button" class="mycol2" value="&larr;" onclick="del()" />
+        </p>
+        <p>
+          <input
+            type="button"
+            class="mycol3"
+            value="cos"
+            onclick="coss('calculator');"
+          />
+          <input
+            type="button"
+            class="mycol3"
+            value="sin"
+            onclick="sinn('calculator');"
+          />
+          <input
+            type="button"
+            class="mycol3"
+            value="tan"
+            onclick="tann('calculator');"
+          />
+        </p>
+        <p>
+          <input type="button" class="btn1" value="7" onclick='v("7")' />
+          <input type="button" class="btn1" value="8" onclick='v("8")' />
+          <input type="button" class="btn1" value="9" onclick='v("9")' />
+          <input type="button" class="mycol" value="*" onclick='v("*")' />
+        </p>
+        <p>
+          <input type="button" class="btn2" value="4" onclick='v("4")' />
+          <input type="button" class="btn2" value="5" onclick='v("5")' />
+          <input type="button" class="btn2" value="6" onclick='v("6")' />
+          <input type="button" class="mycol" value="/" onclick='v("/")' />
+        </p>
+        <p>
+          <input type="button" class="btn3" value="1" onclick='v("1")' />
+          <input type="button" class="btn3" value="2" onclick='v("2")' />
+          <input type="button" class="btn3" value="3" onclick='v("3")' />
+          <input type="button" class="mycol" value="-" onclick='v("-")' />
+        </p>
+        <p>
+          <input type="button" class="btn3" value="0" onclick='v("0")' />
+          <input type="button" class="btn3" value="." onclick='v(".")' />
+          <input type="button" class="mycol2" value="=" onclick="e()" />
+          <input type="button" class="mycol plus" value="+" onclick='v("+")' />
+        </p>
+      </div>
+    </form>
+  </body>
+</html>
